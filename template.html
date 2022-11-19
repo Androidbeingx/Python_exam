@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SNP DNA SEQ</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div>
+        <h1>Random SNPs</h1>
+         
+        <h2>Original Sequence</h2>
+
+        <p>{{original}}</p>
+
+        {% for mutated_seq in mutated_seq_list %}
+            <h2>Sequence {{loop.index}}</h2>
+
+            <p>
+                {{mutated_seq}}
+            </p>
+        {% endfor %}
+    
+        </div>
+    </body>
+
+</html>
